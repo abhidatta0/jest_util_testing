@@ -10,14 +10,20 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "jest": "^27.0.6"
+    "jest": "^27.0.6",
+    "lint-staged": "^11.1.0"
   },
   "dependencies": {
     "husky": "^7.0.1"
   },
-  "husky":{
-    "hooks":{
-      "pre-commit":"npm test && git add -A"
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
     }
+  },
+  "lint-staged":{
+    "*.js":[
+      "jest --bail --passWithNoTests --findRelatedTests"
+    ]
   }
 }
