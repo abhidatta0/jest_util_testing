@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test:staged": "jest --bail --passWithNoTests --findRelatedTests"
+    "test:staged": "cross-env CI=true  jest --bail --passWithNoTests --findRelatedTests"
   },
   "keywords": [],
   "author": "",
