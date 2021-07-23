@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test:staged": "jest"
+    "test:staged": "jest --bail --passWithNoTests --findRelatedTests"
   },
   "keywords": [],
   "author": "",
@@ -22,7 +22,7 @@
   },
   "lint-staged": {
     "*.js": [
-      "jest --bail --passWithNoTests --findRelatedTests"
+      "npm run test:staged"
     ]
   }
 }
