@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest --bail --passWithNoTests --findRelatedTests"
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
