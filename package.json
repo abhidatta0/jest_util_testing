@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test:staged": "cross-env CI=true  jest --bail --passWithNoTests --findRelatedTests"
+    "test": "jest --bail --passWithNoTests --findRelatedTests"
   },
   "keywords": [],
   "author": "",
@@ -22,7 +22,7 @@
   },
   "lint-staged": {
     "*.js": [
-      "npm run test:staged"
+      "npm run test"
     ]
   }
 }
