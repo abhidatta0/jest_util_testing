@@ -32,7 +32,3 @@ test('Should be falsy', ()=>{
 test('Should be truthy', ()=>{
   expect(functions.checkValue(1)).toBeTruthy();
 })
-
-test('Should be truthy', () => {
-  expect(functions.checkValue(1)).toBeTruthy();
-})
