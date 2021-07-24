@@ -14,7 +14,9 @@
     "jest": "^27.0.6",
     "lint-staged": "^11.1.0"
   },
-  "dependencies": {},
+  "dependencies": {
+    "axios": "^0.21.1"
+  },
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
